@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="nav.css">
+
+    </head>
+    <div class="b-example-divider"></div>
+
+    <header class="p-3 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="logo.jpg" class="brand-logo" alt="">
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Contact us</a></li>
+            
+           
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2"><a href="Login.html">Login</a></button>
+            <button type="button" class="btn btn-warning"><a href="Registration.html">Sign-up</a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="container-fluid" style="padding-top: 10px;">
+        <div class="row">
+            <div class="col-lg-12">
+    
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            
+                    <div class="container">
+                      <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            
+                    <div class="container">
+                      <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 10px;">
+        <div class="row">
+          
+                <div class="col-lg-3">
+                    <!-- <div class="card"> -->
+                    <div class="card border border-success" (click)="goToProductDetail('product-details')">
+                        <div class="card-header bg-transparent border-success">
+                            <h5 class="my-0 text-success">Tejtel E-SIM</h5>
+                        </div>
+                        <img class="img-fluid" src="assets/images/Tejtel_logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"> is it really! your phone is a smartphone?
+                                make them smart with e-sim</p>
+                            <a routerLink="/product-details" class="btn btn-success btn-sm">View More <i
+                                    class="mdi mdi-arrow-right ms-1"></i></a>
+        
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="col-lg-3">
+                    <!-- <div class="card"> -->
+                    <div class="card border border-success" (click)="goToProductDetail('global')">
+                        <div class="card-header bg-transparent border-success">
+                            <h5 class="my-0 text-success">Tejtel Global Cards</h5>
+                        </div>
+                        <img class="img-fluid" src="assets/images/Tejtel_logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"> Why spend more on international roaming?
+                                switch to tejtel global plans .</p>
+        
+                            <a routerLink="/global" class="btn btn-success btn-sm">View More <i
+                                    class="mdi mdi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+        
+                <div class="col-lg-3">
+                    <!-- <div class="card"> -->
+                    <div class="card border border-success" (click)="goToProductDetail('global')">
+                        <div class="card-header bg-transparent border-success">
+                            <h5 class="my-0 text-success">Tejtel Regional Cards</h5>
+                        </div>
+                        <img class="img-fluid" src="assets/images/Tejtel_logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"> Now no need to carry multiple SIMs for each country you are traveling to.</p>
+                            <a routerLink="/" class="btn btn-success btn-sm">View More <i
+                                    class="mdi mdi-arrow-right ms-1"></i></a>
+        
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="col-lg-3">
+                    <!-- <div class="card"> -->
+                    <div class="card border border-success" (click)="goToProductDetail('product-details')" >
+                        <div class="card-header bg-transparent border-success">
+                            <h5 class="my-0 text-success">Tejtel Local Cards</h5>
+                        </div>
+                        <img class="img-fluid" src="assets/images/Tejtel_logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"> Whether travelling for business or pleasure, travellers should be able to
+                                connecting local
+        
+                            </p>
+                            <a routerLink="/" class="btn btn-success btn-sm">View More <i
+                                    class="mdi mdi-arrow-right ms-1"></i></a>
+        
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+        
+        </div>
+        
+            </div>
+    </main>
+    <footer>
+        <div class="container-fluid" style="padding-top:10px ;">
+            <div class="row" style="background-color:black">
+                <div class="row" style="color:white">
+
+                    <div class="col-md-4">
+                        <h4></h4>
+                        <img src="logo.jpg" height="50">
+
+                        <p>
+                            AS software Pvt. Ltd. <br>
+                            Thermax chowk, Akurdi, <br>
+                            Chinchwad , <br>
+                             Pune-411019.
+                        </p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Get Help</h4>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Order Status</a></li>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Follow Us On</h4>
+                        <li><a href="www.facebook.com/AS"><i class="fab fa-facebook"></i>facebook</a></li>
+                        <li><a href="twitter.com/AS"><i class="fab fa-twitter"></i>twitter</a></li>
+                        <li><a href="instagram.com/AS"><i class="fab fa-instagram"></i>instagram</a></li>
+                        <li><a href="linkedin.com/company/AS"><i class="fab fa-linkedin"></i>linkedin</a></li>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <p>Copyright &copy; 2022, AS software Pvt. Ltd.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</html>
